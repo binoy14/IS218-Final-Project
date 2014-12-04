@@ -1,0 +1,7 @@
+{
+  "name": "IS218 Project",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
