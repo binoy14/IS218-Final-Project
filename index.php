@@ -22,6 +22,14 @@
 			spl_autoload_register('autoload');
 			new classes\program;
 		?>
+		<div class="jumbotron">
+		  <h1>College Data Program</h1>
+		  <p>
+		  		This program runs off of college data imported into a mysql database; 
+		  		using php and PDOs we connected to the database and ran the following
+		  		five queries found on the separate pages above.
+		  </p>
+		</div>
 		<footer class="footer">
 			<div class="container">
 				<p class="muted-text">College Data Program by Giuseppe & Binoy</p>
