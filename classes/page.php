@@ -4,10 +4,9 @@
 	abstract class page{
 		public $content;
 		public function __construct(){
-
+			$this->heading();
 		}
 		public function __destruct(){
-			$this->heading();
 			echo $this->content;
 		}
 		public function get(){
