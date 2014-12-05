@@ -22,10 +22,10 @@
 			spl_autoload_register('autoload');
 			new classes\program;
 		?>
-		<div id="footer">
+		<footer class="footer">
 			<div class="container">
 				<p class="muted-text">College Data Program by Giuseppe & Binoy</p>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>
