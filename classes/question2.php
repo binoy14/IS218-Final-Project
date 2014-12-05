@@ -2,11 +2,11 @@
 	namespace classes;
 
 	use \classes\page as page;
-	class question1 extends page{
+	class question2 extends page{
 		public function heading(){
 			$this->content .= '
 			<div class="container">
-				<h2>Question 1<h2>
+				<h2>Question 2<h2>
 			</div>';
 		}
 	}
