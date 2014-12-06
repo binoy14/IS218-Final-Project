@@ -22,6 +22,7 @@
 			spl_autoload_register('autoload');
 			new classes\program;
 		?>
+		<?php if(empty($_GET)) { ?>
 		<div class="jumbotron">
 		  <h1>College Data Program</h1>
 		  <p>
@@ -30,6 +31,7 @@
 		  		five queries found on the separate pages above.
 		  </p>
 		</div>
+		<?php } ?>
 		<footer class="footer">
 			<div class="container">
 				<p class="muted-text">College Data Program by Giuseppe & Binoy</p>
