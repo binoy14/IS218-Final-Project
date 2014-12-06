@@ -1,3 +1,10 @@
+
+nav.navbar{
+	background-color: #23b7e5;
+}
+.navbar-default .navbar-nav>li>a{
+	color: white;
+}
 div.jumbotron h1, div.jumbotron p{
 	text-align: center;
 }
