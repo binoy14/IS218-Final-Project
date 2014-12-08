@@ -17,9 +17,23 @@
 		   FROM Enrollment, Colleges
 		   WHERE Enrollment.UNITID = Colleges.UNITID
 		   ORDER BY EFYTOTLT DESC 
-		   LIMIT 10';
+		   LIMIT 25';
 
 	$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY));
 	$query->execute();
 	$results = $query->fetchAll();
+
+
+2. $sql = 'SELECT Colleges.INSTNM, Finacial.F1A13
+		   FROM Colleges, Financial
+		   WHERE Colleges.UNITID = Fiancial.UNITID
+		   ORDER BY F1A13 DESC
+		   LIMIT 25';
+	
+	$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY));
+	$query->execute();
+	$results = $query->fetchAll();
+
+
+
 ?>
