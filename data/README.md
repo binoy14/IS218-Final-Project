@@ -2,8 +2,8 @@
 1. INSTNM, EFYTOTLT
 2. INSTNM, F1A13
 3. INSTNM, F1A18
-4. INSTNM, F1A18 / EEYTOTLM
-5. INSTNM, ( EEYTOTLM in 2010 / EEYTOTLM in 2011 ) * 100
+4. INSTNM, F1A18 / EFYTOTLT
+5. INSTNM, ( EFYTOTLT in 2010 / EFYTOTLT in 2011 ) * 100
 
 ## Database Tables
 
@@ -58,3 +58,11 @@
 	$results = $query->fetchAll();
 
 
+5. $sql = 'SELECT Colleges.INSTNM, Enrollment.EFYTOTLT
+		   FROM Colleges, Enrollment
+		   WHERE Colleges.UNITID = Enrollment.UNITID
+		   AND Enrollment.YEAR = 2010';
+
+
+
+INSTNM, ( EEYTOTLM in 2010 / EEYTOTLM in 2011 ) * 100
