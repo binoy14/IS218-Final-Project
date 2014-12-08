@@ -5,6 +5,23 @@
 4. INSTNM, F1A18 / EFYTOTLT
 5. INSTNM, ( EFYTOTLT in 2010 / EFYTOTLT in 2011 ) * 100
 
+## Headers by Table
+
+- Collegees
+	- UNITID
+	- INSTNM
+
+- Enrollment
+	- UNITID
+	- EFYTOTLT
+	- YEAR
+
+- Financial
+	- UNITID
+	- F1A13
+	- F1A18
+	- YEAR
+
 ## Database Tables
 
 1. Colleges = hd2011
