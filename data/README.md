@@ -58,11 +58,4 @@
 	$results = $query->fetchAll();
 
 
-5. $sql = 'SELECT Colleges.INSTNM, Enrollment.EFYTOTLT
-		   FROM Colleges, Enrollment
-		   WHERE Colleges.UNITID = Enrollment.UNITID
-		   AND Enrollment.YEAR = 2010';
-
-
-
-INSTNM, ( EEYTOTLM in 2010 / EEYTOTLM in 2011 ) * 100
+5. 
