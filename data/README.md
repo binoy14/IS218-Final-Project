@@ -44,3 +44,11 @@
 	$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY));
 	$query->execute();
 	$results = $query->fetchAll();
+
+
+4. $sql = 'SELECT Colleges.INSTNM, Financial.F1A18 / Enrollment.EFYTOTLT
+		   FROM Colleges, Financial, Enrollment
+		   WHERE Financial.UNITID = Enrollment.UNITID
+		   ORDER BY (Financial.F1A18/Enrollment.EFYTOTLT) DESC
+		   LIMIT 25';
+
