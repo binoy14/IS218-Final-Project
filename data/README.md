@@ -52,3 +52,9 @@
 		   ORDER BY (Financial.F1A18/Enrollment.EFYTOTLT) DESC
 		   LIMIT 25';
 
+
+	$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY));
+	$query->execute();
+	$results = $query->fetchAll();
+
+
