@@ -7,7 +7,7 @@
 
 ## Headers by Table
 
-- Collegees
+- Colleges
 	- UNITID
 	- INSTNM
 
