@@ -5,7 +5,7 @@
 4. INSTNM, F1A18 / EFYTOTLT
 5. INSTNM, ( EFYTOTLT in 2010 / EFYTOTLT in 2011 ) * 100
 
-## Headers by Table
+## Tables by Header
 
 - Colleges
 	- UNITID
