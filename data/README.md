@@ -35,5 +35,12 @@
 	$results = $query->fetchAll();
 
 
+3.  $sql = 'SELECT Colleges.INSTNM, Financial.F1A18
+			FROM Colleges, Financial
+			WHERE Colleges.UNITID = Financial.UNITID
+			ORDER BY F1A18 DESC
+			LIMIT 25';
 
-?>
+	$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY));
+	$query->execute();
+	$results = $query->fetchAll();
