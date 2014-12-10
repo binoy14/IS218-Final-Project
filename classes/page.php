@@ -3,14 +3,14 @@
 	
 	abstract class page{
 		public $content;
-		public $db;
+		public $table;
 		public function __construct($dbh){
 			$this->get($dbh);
 		}
 		public function __destruct(){
 			$this->heading();
-			//$this->get();
 			echo $this->content;
+			echo $this->table;
 		}
 		public function get($dbh){
 			
