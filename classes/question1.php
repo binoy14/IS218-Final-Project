@@ -7,26 +7,22 @@
 			$this->content .= '
 			<div class="container">
 				<h2>Question 1<h2>
-				<h5>Create a web page that shows the colleges that have the highest enrollment</h5>
-			</div>';
+				<h5>Create a web page that shows the colleges that have the highest enrollment</h5>';
 		}
 		public function get($dbh){
-			/******* Changed Result Section for DEMO *******/
 			$sql = "select colleges.INSTNM from colleges join enrol_11 on enrol_11.UNITID = colleges.UNITID WHERE EFFYLEV = '1' ORDER BY EFYTOTLT desc";
 			$query = $dbh->prepare($sql); 
 			$query->execute(); 
 			$results = $query->fetchAll(\PDO::FETCH_ASSOC);
 
-
-			$table = '<table class="table table-striped" border="1">';
-			$table .= '<tr><th>' . "INSTNM" . '</th></tr><tr>';
+			$this->table = '<table class="table table-bordered table-striped table-responsive">';
+			$this->table .= '<tr><th>' . "Institue Name" . '</th></tr>';
 			$i = 0;
 			foreach($results as $result){
-				$table .= '<td>' . $result['INSTNM'] . '</td></tr>';
+				$this->table .= '<td>' . $result['INSTNM'] . '</td></tr>';
 				$i++;
 			}
-			echo $table;
-
+			$this->table .= '</table></div>';
 		}
 	}
 ?>
