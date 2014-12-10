@@ -15,11 +15,10 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		        </button>
-		      <a class="navbar-brand" href="#">IS218 Final</a>
+		      <a class="navbar-brand" href="index.php">IS218 Final</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="index.php">Home</a></li>
 					<li><a href="index.php?page=classes\question1">Question 1</a></li>
 					<li><a href="index.php?page=classes\question2">Question 2</a></li>
 					<li><a href="index.php?page=classes\question3">Question 3</a></li>
