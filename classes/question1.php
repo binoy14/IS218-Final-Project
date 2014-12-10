@@ -4,7 +4,14 @@
 
 	class question1 extends page{
 		public function __construct(){
-			
+			try {
+				global $dbh;
+				$dbh = new \PDO('mysql:host=localhost; dbname=college', 'college', 'college');
+				//echo 'connected';
+			}catch(Exception $e) {
+				print "Error: " . $e->getMessage() . "<br>";
+				die();
+			}
 		}
 		public function heading(){
 			$this->content .= '
@@ -14,6 +21,7 @@
 			</div>';
 		}
 		public function get(){
+			global $dbh;
 			//$sql = 'SELECT Colleges.INSTNM, EFYTOTLT FROM Enrollment, Colleges WHERE Enrollment.UNITID = Colleges.UNITID ORDER BY EFYTOTLT DESC LIMIT 25';
 			$sql = 'SELECT * from colleges LIMIT 25';
 			$query = $dbh->prepare($sql); 
