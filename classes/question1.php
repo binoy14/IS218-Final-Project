@@ -19,7 +19,7 @@
 
 
 			$table = '<table class="table table-striped" border="1">';
-			$table .= '<tr><th>' . "UNITID" . '</th></tr><tr>';
+			$table .= '<tr><th>' . "INSTNM" . '</th></tr><tr>';
 			$i = 0;
 			foreach($results as $result){
 				$table .= '<td>' . $result['INSTNM'] . '</td></tr>';
