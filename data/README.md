@@ -33,7 +33,7 @@
 
 ## Database Tables
 
-1. Colleges = hd2011
-2. Enrollment = effy2010,2011
-3. Financial = f0910_f1a, f1011_f1a
+1. colleges = hd2011
+2. enrol_10,enrol_11 = effy2010,2011
+3. fin_10,fin_11 = f0910_f1a, f1011_f1a
 
