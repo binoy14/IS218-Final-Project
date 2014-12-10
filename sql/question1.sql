@@ -1,0 +1,1 @@
+select colleges.INSTNM from colleges join enrol_11 on enrol_11.UNITID = colleges.UNITID WHERE EFFYLEV = '1' ORDER BY EFYTOTLT desc
