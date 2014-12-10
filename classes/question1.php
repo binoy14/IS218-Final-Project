@@ -3,9 +3,6 @@
 	use \classes\page as page;
 
 	class question1 extends page{
-		public function __construct($dbh){
-			$this->get($dbh);
-		}
 		public function heading(){
 			$this->content .= '
 			<div class="container">
