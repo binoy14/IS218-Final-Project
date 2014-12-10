@@ -18,10 +18,13 @@
 			</ul>
 		</nav>
 		<?php
+			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
+			//require 'classes/connect.php';
 			require 'Autoloader.php';
 			spl_autoload_register('autoload');
+			var_dump(new classes\connect);
 			new classes\program;
-			//new connect;
 		?>
 		<?php if(empty($_GET)) { ?>
 		<div class="jumbotron">
