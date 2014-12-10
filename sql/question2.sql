@@ -1,0 +1,1 @@
+select colleges.INSTNM, fin_10.F1A13 from colleges join fin_10 on fin_10.UNITID = colleges.UNITID order by fin_10.F1A13 desc
