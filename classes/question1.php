@@ -12,10 +12,7 @@
 		}
 		public function get($dbh){
 			/******* Changed Result Section for DEMO *******/
-			//$sql = 'SELECT Colleges.INSTNM, EFYTOTLT FROM Enrollment, Colleges WHERE Enrollment.UNITID = Colleges.UNITID ORDER BY EFYTOTLT DESC LIMIT 25';
 			$sql = "select colleges.INSTNM from colleges join enrol_11 on enrol_11.UNITID = colleges.UNITID WHERE EFFYLEV = '1' ORDER BY EFYTOTLT desc";
-
-			//$sql = 'SELECT * from Fin_2010 LIMIT 25';
 			$query = $dbh->prepare($sql); 
 			$query->execute(); 
 			$results = $query->fetchAll(\PDO::FETCH_ASSOC);
