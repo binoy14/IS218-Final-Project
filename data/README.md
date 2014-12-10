@@ -1,5 +1,5 @@
 ## Question Headers
-1. INSTNM, EFYTOTLT
+1. INSTNM, EFYTOTLT, EFFYLEV
 2. INSTNM, F1A13
 3. INSTNM, F1A18
 4. INSTNM, F1A18 / EFYTOTLT
@@ -14,13 +14,12 @@
 - Enrollment
 	- UNITID
 	- EFYTOTLT
-	- YEAR
+	- EFFYLEV
 
 - Financial
 	- UNITID
 	- F1A13
 	- F1A18
-	- YEAR
 
 ## Database Tables
 

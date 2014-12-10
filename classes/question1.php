@@ -3,9 +3,6 @@
 	use \classes\page as page;
 
 	class question1 extends page{
-		public function __construct($dbh){
-			$this->get($dbh);
-		}
 		public function heading(){
 			$this->content .= '
 			<div class="container">
@@ -23,7 +20,7 @@
 
 
 			$table = '<table class="table table-striped" border="1">';
-			$table .= '<tr><th>' . "UNITID" . '</th>' . '<th>' . "INSTNM" . '</th></tr><tr>';
+			$table .= '<tr><th>' . "UNITID" . '</th>' . '<th>' . "EFYTOTLT" . '</th></tr><tr>';
 			$i = 0;
 			foreach($results as $result){
 				$table .= '<td>' . $result['UNITID'] . '</td>' . '<td>' . $result['EFYTOTLT'] . '</td></tr>';

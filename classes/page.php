@@ -4,8 +4,8 @@
 	abstract class page{
 		public $content;
 		public $db;
-		public function __construct(){
-			
+		public function __construct($dbh){
+			$this->get($dbh);
 		}
 		public function __destruct(){
 			$this->heading();
