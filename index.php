@@ -21,7 +21,7 @@
 			require 'Autoloader.php';
 			spl_autoload_register('autoload');
 			new classes\program;
-			new connect;
+			//new connect;
 		?>
 		<?php if(empty($_GET)) { ?>
 		<div class="jumbotron">

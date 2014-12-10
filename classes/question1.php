@@ -2,8 +2,10 @@
 	namespace classes;
 	use \classes\page as page;
 
-	include('connect.php');
 	class question1 extends page{
+		public function __construct(){
+			
+		}
 		public function heading(){
 			$this->content .= '
 			<div class="container">
@@ -12,13 +14,22 @@
 			</div>';
 		}
 		public function get(){
-			$sql = 'SELECT Colleges.INSTNM, EFYTOTLT FROM Enrollment, Colleges WHERE Enrollment.UNITID = Colleges.UNITID ORDER BY EFYTOTLT DESC LIMIT 25';
-			
-			$query = $dbh->prepare($sql, array(PDO::ATR_CURSOR => PDO::CURSOR_FWDONLY)); 
+			//$sql = 'SELECT Colleges.INSTNM, EFYTOTLT FROM Enrollment, Colleges WHERE Enrollment.UNITID = Colleges.UNITID ORDER BY EFYTOTLT DESC LIMIT 25';
+			$sql = 'SELECT * from colleges LIMIT 25';
+			$query = $dbh->prepare($sql); 
 			$query->execute(); 
-			$results = $query->fetchAll();
+			$results = $query->fetchAll(\PDO::FETCH_ASSOC);
 
-			echo $results;
+
+			$table = '<table class="table table-striped" border="1">';
+			$table .= '<tr><th>' . "UNITID" . '</th>' . '<th>' . "INSTNM" . '</th></tr><tr>';
+			$i = 0;
+			foreach($results as $result){
+				$table .= '<td>' . $result['UNITID'] . '</td>' . '<td>' . $result['INSTNM'] . '</td></tr>';
+				$i++;
+			}
+			echo $table;
+
 		}
 	}
 ?>
