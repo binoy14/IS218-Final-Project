@@ -47,7 +47,7 @@
 		<?php } ?>
 		<footer class="footer">
 			<div class="container">
-				<p class="muted-text">College Data Program by Giuseppe & Binoy</p>
+				<p class="muted-text">College Data Program by Giuseppe & Binoy. Source Code : <a target="_blank" href="https://github.com/binoy14/IS218-Final-Project">Github</a></p>
 			</div>
 		</footer>
 	</body>
