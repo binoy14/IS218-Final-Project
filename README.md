@@ -20,9 +20,10 @@ This program runs off of college data imported into a mysql database; using php 
 ````
 
 ##CSS with Bootstrap
-
+````
 Install Bootrap with bower by running the following command
 $ bower install bootstrap
+````
 
 <link rel="stylesheet" type="text/css" href="public/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="public/css/yourstyleshere.css">
