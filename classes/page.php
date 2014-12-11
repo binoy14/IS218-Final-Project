@@ -5,7 +5,7 @@
 		public $content;
 		public $table;
 		public function __construct($dbh){
-			$sql = $this->get($dbh);
+			$sql = $this->get();
 			$this->printTable($dbh,$sql);
 		}
 		public function __destruct(){
@@ -13,7 +13,7 @@
 			echo $this->content;
 			echo $this->table;
 		}
-		public function get($dbh){}
+		public function get(){}
 		
 		public function printTable($dbh, $sql){
 			$query = $dbh->prepare($sql); 
