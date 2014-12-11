@@ -4,11 +4,11 @@
 
 ##Introduction
 
-```This program runs off of college data imported into a mysql database; using php and PDOs we connected to the database and ran the following five queries found on the separate pages above.
+This program runs off of college data imported into a mysql database; using php and PDOs we connected to the database and ran the following five queries found on the separate pages above.
 
 
 ##Creating a connect file
-```php
+````php
 <?php
 	try {
 		$dbh = new PDO('mysql:host=localhost; dbname=databasename;charset=utf8', 'username', 'password');
@@ -20,7 +20,7 @@
 
 ##CSS with Bootstrap
 
-```Install Bootrap with bower by running the following command
+Install Bootrap with bower by running the following command
 $ bower install bootstrap
 
 <link rel="stylesheet" type="text/css" href="public/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -30,7 +30,7 @@ $ bower install bootstrap
 
 ##Include autoloader
 
-```php
+````php
 <?php
 function autoload($className)
 {
@@ -48,13 +48,13 @@ function autoload($className)
 ?>
 
 And initialize on the index page by:
-```php
+````php
 require 'Autoloader.php';
 spl_autoload_register('autoload');
 
 ##Create a program or app file
 
-```php
+````php
 <?php
 class program {
 		public function __construct($dbh){
@@ -66,12 +66,11 @@ class program {
 		}
 	}
 ?>
-
-```This file creates an instance of page, which gets extended to the various questions. Based on the question the proper class gets created and data displayed.
+This file creates an instance of page, which gets extended to the various questions. Based on the question the proper class gets created and data displayed.
 
 ##Setting the page type
 
-```html
+````html
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
