@@ -17,6 +17,7 @@ This program runs off of college data imported into a mysql database; using php 
 		die();
 	}	
 ?>
+````
 
 ##CSS with Bootstrap
 
@@ -47,10 +48,10 @@ function autoload($className)
 }
 ?>
 
-And initialize on the index page by:
-````php
+And initialize the autoloader on the index page by:
 require 'Autoloader.php';
 spl_autoload_register('autoload');
+````
 
 ##Create a program or app file
 
@@ -67,11 +68,10 @@ class program {
 	}
 ?>
 This file creates an instance of page, which gets extended to the various questions. Based on the question the proper class gets created and data displayed.
+````
 
 ##Setting the page type
-
-````html
-
+````
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
 		<li><a href="index.php?page=classes\question1">Question 1</a></li>
@@ -83,4 +83,5 @@ This file creates an instance of page, which gets extended to the various questi
 </div>
 
 
-```This is how the pages get called. Based on the link that is pressed in the navigation, the page gets set to that question. 
+This is how the pages get called. Based on the link that is pressed in the navigation, the page gets set to that question. 
+````
